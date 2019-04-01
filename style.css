@@ -40,7 +40,38 @@ main{
     height: 100vh;
     background: #345;
 }
-.marathons_finisher{height: 80vh;}
+.box1{
+    position: relative;
+    width: 180px;
+    height:320px;
+    margin-top:150px;
+    margin-left: 100px;
+    background: rgba(0,0,0,1);
+    transform: rotate(-20deg) skew(20deg) scale(0.8);
+    transition: 0.5s;
+}
+.box1 img{
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+}
+.box1:hover img:nth-child(4){
+    transform: translate(160px,-160px);
+    opacity: 1;
+}
+.box1:hover img:nth-child(3){
+    transform: translate(120px,-120px);
+    opacity: 0.8;
+}
+.box1:hover img:nth-child(2){
+    transform: translate(80px,-80px);
+    opacity: 0.8;
+}
+.box1:hover img:nth-child(1){
+    transform: translate(40px,-40px);
+    opacity: 0.8;
+}
+marathons_finisher{height: 80vh;}
 .carousel-inner > .item {
     height: 600px;
  }
